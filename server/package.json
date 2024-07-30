@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts",
     "build": "npx prisma generate && tsc",
-    "start": "node src/index.js",
+    "start": "yarn build && yarn migrate:deploy && node dist/index.js",
+    "migrate:deploy": "prisma migrate deploy",
+    "migrate:dev": "prisma migrate dev",
+    "generate": "prisma generate",
     "test": "jest --maxWorkers=1",
     "test:watch": "jest --watch --maxWorkers=1"
   },

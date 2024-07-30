@@ -4,7 +4,7 @@ Este é um projeto de To-Do List desenvolvido como teste técnico para uma vaga 
 
 ## Descrição
 
-Este projeto é uma aplicação de lista de tarefas desenvolvida como teste técnico para uma vaga full stack. Aproveitei a simplicidade do projeto para implementar e explorar novas funcionalidades do Next.js 15 (versão canary) e do React v19, que ainda não foram lançadas oficialmente.
+Este projeto é uma aplicação de lista de tarefas desenvolvida como teste técnico para uma vaga full stack. Aproveitei o escopo do projeto para implementar e explorar novas funcionalidades do Next.js 15 (versão canary) e do React v19, que ainda não foram lançadas oficialmente.
 
 O projeto utiliza novos hooks e APIs do React v19, como:
 
@@ -12,7 +12,7 @@ O projeto utiliza novos hooks e APIs do React v19, como:
 - **`useTransition`**: Um hook para gerenciar transições assíncronas e otimizar o tempo de resposta da interface.
 - **`use`**: Uma nova API para simplificar a criação e uso de hooks personalizados.
 
-A aplicação busca demonstrar o uso das mais recentes inovações em desenvolvimento frontend e backend, combinando tecnologias de ponta e práticas de desenvolvimento modernas.
+A aplicação busca demonstrar o uso das mais recentes inovações em desenvolvimento frontend (React Server Components) e backend, combinando tecnologias de ponta e práticas de desenvolvimento modernas.
 
 ## Tecnologias Utilizadas
 
@@ -47,34 +47,29 @@ O projeto é dividido em duas pastas principais:
 ### Backend
 
 1. Navegue até a pasta `server`:
-
-   ```bash
-   cd server
-   ```
+    ```bash
+    cd server
+    ```
 
 2. Suba o banco de dados PostgreSQL com Docker:
-
-   ```bash
-   docker compose up
-   ```
+    ```bash
+    docker compose up
+    ```
 
 3. Instale as dependências do backend:
+    ```bash
+    yarn
+    ```
 
-   ```bash
-   yarn
-   ```
-
-4. Gere as migrações do Prisma:
-
-   - **Nota**: O script para gerar as migrações ainda precisa ser criado. Para gerar manualmente:
-     ```bash
-     npx prisma migrate dev
-     ```
+4. Compile o projeto e aplique as migrações:
+    ```bash
+    yarn build
+    ```
 
 5. Inicie o servidor da API:
-   ```bash
-   yarn dev
-   ```
+    ```bash
+    yarn start
+    ```
 
 ### Frontend
 
