@@ -2,6 +2,9 @@
 
 Este é um projeto de To-Do List desenvolvido como teste técnico para uma vaga full stack. O objetivo é demonstrar habilidades em desenvolvimento backend e frontend, bem como a capacidade de utilizar novas funcionalidades e tecnologias.
 
+![image](https://github.com/user-attachments/assets/f2da66a2-058b-4848-b9bc-ae89f563b30d)
+
+
 ## Descrição
 
 Este projeto é uma aplicação de lista de tarefas desenvolvida como teste técnico para uma vaga full stack. Aproveitei o escopo do projeto para implementar e explorar novas funcionalidades do Next.js 15 (versão canary) e do React v19, que ainda não foram lançadas oficialmente.
